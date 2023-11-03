@@ -7,15 +7,15 @@ B    |   |
   -----------
 C    |   |   
 */
-function getInitialBoard() {
+function getInitialBoard(): string {
   // If height is larger than 9, we need to adjust the label widths
   // to account for two-digit labels:
-  const H = 3;
+  const H: number = 3;
   // If the width is larger than 26, we need to adjust the column labels
   // to account for labels after Z:
-  const W = 3;
+  const W: number = 3;
 
-  let boardString = '';
+  let boardString: string = '';
 
   // Column labels:
   for (let j = 0; j < W; j += 1) {
